@@ -492,3 +492,187 @@ input {
     }
 
 }
+/* =========================
+   SHOP PAGE
+========================= */
+
+.page-header {
+    padding: 110px 8vw 90px;
+
+    border-bottom: 1px solid #222;
+}
+
+.page-header h1 {
+    margin-top: 20px;
+
+    font-size: clamp(60px, 10vw, 140px);
+    line-height: 0.85;
+    letter-spacing: -0.07em;
+}
+
+.page-description {
+    max-width: 480px;
+
+    margin-top: 30px;
+
+    color: #888;
+    font-size: 16px;
+}
+
+
+/* =========================
+   SHOP FILTERS
+========================= */
+
+.shop-section {
+    padding: 60px 5vw 120px;
+}
+
+.shop-filters {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 55px;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.shop-filters::-webkit-scrollbar {
+    display: none;
+}
+
+.filter {
+    flex-shrink: 0;
+
+    padding: 10px 16px;
+
+    color: #888;
+    background: transparent;
+
+    border: 1px solid #333;
+
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+    cursor: pointer;
+}
+
+.filter:hover {
+    color: #fff;
+    border-color: #666;
+}
+
+.filter.active {
+    color: #0a0a0a;
+    background: #f2f2f2;
+
+    border-color: #f2f2f2;
+}
+
+
+/* =========================
+   SHOP GRID
+========================= */
+
+.shop-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 65px 20px;
+}
+
+.shop-product {
+    min-width: 0;
+}
+
+.shop-product-image {
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #111;
+
+    border: 1px solid #282828;
+
+    transition:
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.shop-product-image:hover {
+    border-color: #555;
+
+    transform: translateY(-3px);
+}
+
+.shop-product-image span {
+    color: #555;
+
+    font-size: 12px;
+    letter-spacing: 0.15em;
+}
+
+.shop-product-info {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 20px;
+
+    padding-top: 16px;
+}
+
+.shop-product-info h2 {
+    margin: 4px 0 5px;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.product-meta {
+    color: #555;
+
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.shop-price {
+    color: #aaa;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   SHOP MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .page-header {
+        padding: 80px 20px 70px;
+    }
+
+    .page-header h1 {
+        font-size: 19vw;
+    }
+
+    .shop-section {
+        padding: 40px 20px 80px;
+    }
+
+    .shop-grid {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+}
