@@ -887,3 +887,300 @@ input {
     }
 
 }
+
+/* =========================
+   PACK PAGE
+========================= */
+
+.pack-hero {
+    padding: 120px 8vw 100px;
+
+    border-bottom: 1px solid #222;
+}
+
+.pack-hero h1 {
+    margin-top: 25px;
+
+    font-size: clamp(70px, 13vw, 180px);
+
+    line-height: 0.82;
+
+    letter-spacing: -0.08em;
+}
+
+.pack-intro {
+    max-width: 500px;
+
+    margin-top: 40px;
+
+    color: #999;
+
+    font-size: 18px;
+}
+
+.pack-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+.pack-tags span {
+    padding: 8px 12px;
+
+    border: 1px solid #333;
+
+    color: #777;
+
+    font-size: 9px;
+
+    letter-spacing: 0.1em;
+}
+
+
+/* =========================
+   PACK DESCRIPTION
+========================= */
+
+.pack-description {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+
+    gap: 50px;
+
+    padding: 100px 8vw;
+
+    border-bottom: 1px solid #222;
+}
+
+.pack-description-text {
+    max-width: 700px;
+}
+
+.pack-description-text p {
+    margin-bottom: 25px;
+
+    color: #aaa;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   EDITIONS
+========================= */
+
+.editions {
+    padding: 110px 5vw 130px;
+}
+
+.editions-header {
+    margin-bottom: 60px;
+}
+
+.editions-header h2 {
+    margin-top: 20px;
+
+    font-size: clamp(48px, 7vw, 90px);
+
+    line-height: 0.88;
+
+    letter-spacing: -0.06em;
+}
+
+.edition-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.edition-card {
+    padding: 40px;
+
+    border: 1px solid #292929;
+
+    background: #0d0d0d;
+}
+
+.edition-expanded {
+    border-color: #555;
+}
+
+.edition-label {
+    color: #666;
+
+    font-size: 10px;
+
+    letter-spacing: 0.15em;
+}
+
+.edition-card h3 {
+    margin-top: 20px;
+
+    font-size: 32px;
+
+    font-weight: 500;
+
+    letter-spacing: -0.04em;
+}
+
+.edition-description {
+    max-width: 500px;
+
+    margin-top: 18px;
+
+    color: #888;
+
+    font-size: 14px;
+}
+
+.edition-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin: 35px 0 40px;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+.edition-list li {
+    color: #aaa;
+
+    font-size: 13px;
+}
+
+.edition-list li::before {
+    content: "— ";
+
+    color: #555;
+}
+
+.edition-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.edition-price {
+    color: #fff;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   PACK LICENSE
+========================= */
+
+.pack-license {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 35px 8vw;
+
+    border-top: 1px solid #222;
+
+    border-bottom: 1px solid #222;
+}
+
+.pack-license p {
+    color: #666;
+
+    font-size: 11px;
+}
+
+.pack-license a {
+    flex-shrink: 0;
+
+    color: #aaa;
+
+    font-size: 10px;
+
+    letter-spacing: 0.1em;
+}
+
+.pack-license a:hover {
+    color: #fff;
+}
+
+
+/* =========================
+   PACK MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .pack-hero {
+        padding: 85px 20px 75px;
+    }
+
+    .pack-hero h1 {
+        font-size: 22vw;
+    }
+
+    .pack-intro {
+        font-size: 16px;
+    }
+
+    .pack-description {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding: 75px 20px;
+    }
+
+    .pack-description-text p {
+        font-size: 16px;
+    }
+
+    .editions {
+        padding: 80px 20px 90px;
+    }
+
+    .edition-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .edition-card {
+        padding: 28px;
+    }
+
+    .edition-bottom {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+    .pack-license {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        padding: 30px 20px;
+    }
+
+}
