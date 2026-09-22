@@ -1,3 +1,4 @@
+```css
 /* =========================================================
    LEGRAND_MIRTH — GLOBAL STYLES
 ========================================================= */
@@ -638,156 +639,6 @@ input {
 
 
 /* =========================================================
-   SOUNDS — OLD SHOP GRID SUPPORT
-   Kept temporarily so existing content does not break.
-========================================================= */
-
-.shop-section {
-    padding: 60px 5vw 120px;
-}
-
-.shop-filters {
-    display: flex;
-
-    gap: 10px;
-
-    margin-bottom: 55px;
-
-    overflow-x: auto;
-
-    scrollbar-width: none;
-}
-
-.shop-filters::-webkit-scrollbar {
-    display: none;
-}
-
-.filter {
-    flex-shrink: 0;
-
-    padding: 10px 16px;
-
-    background: transparent;
-
-    color: #888;
-
-    border: 1px solid #333;
-
-    cursor: pointer;
-
-    font-size: 10px;
-
-    letter-spacing: 0.1em;
-
-    text-transform: uppercase;
-}
-
-.filter:hover {
-    color: #fff;
-
-    border-color: #666;
-}
-
-.filter.active {
-    background: #f2f2f2;
-
-    color: #0a0a0a;
-
-    border-color: #f2f2f2;
-}
-
-.shop-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 65px 20px;
-}
-
-.shop-product {
-    min-width: 0;
-}
-
-.shop-product-image {
-    aspect-ratio: 1 / 1;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    background: #111;
-
-    border: 1px solid #282828;
-
-    transition:
-        border-color 0.2s ease,
-        transform 0.2s ease;
-}
-
-.shop-product-image:hover {
-    border-color: #555;
-
-    transform: translateY(-3px);
-}
-
-.shop-product-image span {
-    color: #555;
-
-    font-size: 12px;
-
-    letter-spacing: 0.15em;
-}
-
-.shop-product-info {
-    padding-top: 16px;
-
-    display: flex;
-
-    align-items: flex-start;
-
-    justify-content: space-between;
-
-    gap: 20px;
-}
-
-.shop-product-info h2 {
-    margin: 4px 0 5px;
-
-    font-size: 16px;
-
-    font-weight: 500;
-}
-
-.product-type {
-    margin-bottom: 5px;
-
-    color: #666;
-
-    font-size: 10px;
-
-    letter-spacing: 0.12em;
-}
-
-.product-meta {
-    color: #555;
-
-    font-size: 10px;
-
-    letter-spacing: 0.08em;
-
-    text-transform: uppercase;
-}
-
-.shop-price {
-    color: #aaa;
-
-    font-size: 14px;
-}
-
-
-/* =========================================================
    PRODUCT LICENSE NOTICE
 ========================================================= */
 
@@ -821,7 +672,7 @@ input {
 
 
 /* =========================================================
-   Behind the Crowd — HERO
+   BEHIND THE CROWD — HERO
 ========================================================= */
 
 .after-hero {
@@ -921,7 +772,7 @@ input {
 
 
 /* =========================================================
-   Behind the Crowd — INTRO
+   BEHIND THE CROWD — INTRO
 ========================================================= */
 
 .after-intro {
@@ -972,7 +823,7 @@ input {
 
 
 /* =========================================================
-   Behind the Crowd — STATEMENT
+   BEHIND THE CROWD — STATEMENT
 ========================================================= */
 
 .after-statement {
@@ -1011,7 +862,7 @@ input {
 
 
 /* =========================================================
-   Behind the Crowd — DETAILS
+   BEHIND THE CROWD — DETAILS
 ========================================================= */
 
 .after-details {
@@ -1069,7 +920,7 @@ input {
 
 
 /* =========================================================
-   Behind the Crowd — EDITIONS
+   BEHIND THE CROWD — EDITIONS
 ========================================================= */
 
 .after-editions {
@@ -1273,7 +1124,7 @@ input {
 
 
 /* =========================================================
-   Behind the Crowd — LICENSE
+   BEHIND THE CROWD — LICENSE
 ========================================================= */
 
 .after-license {
@@ -1373,7 +1224,6 @@ input {
 ========================================================= */
 
 @media (max-width: 700px) {
-
 
     /* NAV */
 
@@ -1508,20 +1358,7 @@ input {
     }
 
 
-    /* OLD SHOP SUPPORT */
-
-    .shop-section {
-        padding: 40px 20px 80px;
-    }
-
-    .shop-grid {
-        grid-template-columns: 1fr;
-
-        gap: 55px;
-    }
-
-
-    /* Behind the Crowd */
+    /* BEHIND THE CROWD */
 
     .after-hero {
         min-height: calc(100vh - 65px);
@@ -1631,3 +1468,4 @@ input {
     }
 
 }
+```
